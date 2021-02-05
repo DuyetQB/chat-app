@@ -12,13 +12,13 @@ import './App.css';
 const projectID = 'be002709-e468-4da9-a3be-05e9841b9c03';
 const App = () => {
 
-   if (!localStorage.getItem('username')) return <LoginForm />;
+  //  if (!localStorage.getItem('username')) return <LoginForm />;
   
   return (
 
     <ChatEngine
       height="100vh"
-      projectID={projectID}
+      projectID='be002709-e468-4da9-a3be-05e9841b9c03'
       userName='Sĩ Duyệt '
       userSecret='12341234 '
       renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps} />}
