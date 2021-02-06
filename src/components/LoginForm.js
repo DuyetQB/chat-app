@@ -15,12 +15,12 @@ const Modal = () => {
     const authObject = { 'Project-ID': projectID, 'User-Name':username, 'User-Secret':password};
 
     try {
-      await axios.get('https://api.chatengine.io/projects/chats/', { headers:  authObject  });
+      await axios.get('https://chatengine.io/projects/be002709-e468-4da9-a3be-05e9841b9c03', { headers:  authObject  });
 
       localStorage.setItem('username', username);
       localStorage.setItem('password', password);
 
-      window.location.reload();
+       window.location.reload();
       setError('');
     } catch (err) {
       setError('Oops, incorrect credentials.');
